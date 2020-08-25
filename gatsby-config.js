@@ -35,6 +35,26 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: `Jim Nightshade`
+            },
+            {
+              family: `Roboto Mono`,
+              variants: [`200`, `400`]
+            }
+          ]
+        }
+        //formats: ['woff2', 'woff'],
+        //useMinify: true,
+        //usePreload: true,
+        //usePreconnect: false,
+      }
+    },
     'custom-mui-theme'
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
