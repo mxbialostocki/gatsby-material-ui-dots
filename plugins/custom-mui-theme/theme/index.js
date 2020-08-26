@@ -3,8 +3,8 @@ import typography from './typography'
 
 // Set pallete primary and secondary colours here
 const palette = {
-  primary: { main: '#f50057' },
-  secondary: { main: '#D81B60' }
+  primary: { main: '#f44336' },
+  secondary: { main: '#ff7043' }
 };
 
 // set core overrides here using the Mui element
