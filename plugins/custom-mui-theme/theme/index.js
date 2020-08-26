@@ -19,4 +19,4 @@ const overrides = {
 
 const themeName = 'Dots Pew Invisibles Rosella';
 
-export default createMuiTheme({ palette, themeName, typography });
+export default createMuiTheme({ palette, themeName, typography, overrides });
