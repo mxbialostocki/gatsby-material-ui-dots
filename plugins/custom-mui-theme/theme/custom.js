@@ -6,6 +6,25 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: `1.45rem`,
     padding: `2rem`
   },
+  header: {
+    background: `#f44336`,
+    position: 'fixed',
+    top: '0',
+    zIndex: '10',
+    width: '100vw',
+    height: '6rem'
+  },
+  headerWrap: {
+    margin: `0 auto`,
+    padding: `0 1rem`,
+    maxWidth: '70vw',
+    [theme.breakpoints.down('sm')]: {
+      maxWidth: '90vw',
+    },
+    [theme.breakpoints.down('xs')]: {
+      maxWidth: '100vw'
+    }
+  },
   layout: {
     margin: `0 auto`,
     maxWidth: '70vw',
@@ -16,11 +35,11 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: '100vw'
     },
     minHeight: '100vh',
-    padding: `9rem 1.0875rem 6rem 1.0875rem`,
+    padding: `6rem 1.0875rem 6rem 1.0875rem`,
     [theme.breakpoints.down('sm')]: {
       padding: `9rem 1.0875rem 9rem 1.0875rem`, 
     }    
-  },
+  }
 }));
 
 export default useStyles

@@ -1,35 +1,36 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { Grid, Typography } from "@material-ui/core"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+import useStyles from '../../plugins/custom-mui-theme/theme/custom'
+
+const Header = ({ siteTitle }) => {
+  const { header, headerWrap } = useStyles()
+  return (
+    <header className={header} >
+      <Grid container spacing={4} direction="row" justify='space-around' className={headerWrap}>
+
+        <Grid item xs={12} sm={6}>        
+          <Link to="/" >
+            <Typography variant="h2">{siteTitle}</Typography>
+          </Link>
+        </Grid>
+        <Grid item xs={12} sm={3}>
+          <Link to="/page-2/" >
+            <Typography variant="h5">page two</Typography>
+          </Link>
+        </Grid>
+        <Grid item xs={12} sm={3}>
+          <Link to="/" >
+            <Typography variant="h5">page three</Typography>
+          </Link>
+        </Grid>
+
+      </Grid>
+    </header>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
