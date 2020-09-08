@@ -52,9 +52,11 @@ const useStyles = makeStyles((theme) => ({
     position: 'fixed',
     bottom: '0rem',
     zIndex: '10',
-    width: '100vw',    
+    width: '100vw',
+    height: '4rem'   
   },
   footerWrap: {
+    margin: `0 auto`,
     padding: `1rem`,
     maxWidth: '70vw',
     [theme.breakpoints.down('sm')]: {

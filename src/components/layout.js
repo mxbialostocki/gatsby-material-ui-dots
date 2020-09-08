@@ -26,11 +26,9 @@ const Layout = ({ children }) => {
       <Grid container spacing={4} className={layout}>
         <Grid item xs={12}>
           <main>{children}</main>
-        </Grid>
-        <Grid item xs={12}>
-          <Footer />
-        </Grid>
+        </Grid>          
       </Grid>
+      <Footer />
     </React.Fragment>
   )
 }
