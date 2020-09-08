@@ -39,6 +39,7 @@ module.exports = {
       resolve: `gatsby-plugin-webfonts`,
       options: {
         fonts: {
+          // import google webfonts in the google array below to use them in the custom MUI theme. The example here is `Jim Nightshade`
           google: [
             {
               family: `Jim Nightshade`
