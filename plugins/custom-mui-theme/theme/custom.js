@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
     padding: `2rem`
   },
   header: {
-    background: `#f44336`,
+    background: `#00041a`,
     position: 'fixed',
     top: '0',
     zIndex: '10',
@@ -24,6 +24,10 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('xs')]: {
       maxWidth: '100vw'
     }
+  },
+  link: {
+    textDecoration: 'none',
+    color: `#f44336`
   },
   layout: {
     margin: `0 auto`,

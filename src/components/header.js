@@ -1,7 +1,8 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import { Grid, Typography } from "@material-ui/core"
+
+import Link from './link'
 
 import useStyles from '../../plugins/custom-mui-theme/theme/custom'
 
