@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { Grid } from '@material-ui/core'
 
 import Header from "./header"
+import Footer from "./footer"
 
 import useStyles from '../../plugins/custom-mui-theme/theme/custom'
 
@@ -27,11 +28,7 @@ const Layout = ({ children }) => {
           <main>{children}</main>
         </Grid>
         <Grid item xs={12}>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
+          <Footer />
         </Grid>
       </Grid>
     </React.Fragment>

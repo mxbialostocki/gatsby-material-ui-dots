@@ -1,6 +1,9 @@
 import { makeStyles } from "@material-ui/core/styles"
 
 const useStyles = makeStyles((theme) => ({
+  primary: {
+    color: `#f44336`
+  },
   containerExample: {
     maxWidth: `300px`,
     marginBottom: `1.45rem`,
@@ -42,7 +45,24 @@ const useStyles = makeStyles((theme) => ({
     padding: `6rem 1.0875rem 6rem 1.0875rem`,
     [theme.breakpoints.down('sm')]: {
       padding: `9rem 1.0875rem 9rem 1.0875rem`, 
-    }    
+    }
+  },
+  footer: {
+    background: `#ffffff`,
+    position: 'fixed',
+    bottom: '0rem',
+    zIndex: '10',
+    width: '100vw',    
+  },
+  footerWrap: {
+    padding: `1rem`,
+    maxWidth: '70vw',
+    [theme.breakpoints.down('sm')]: {
+      maxWidth: '90vw',
+    },
+    [theme.breakpoints.down('xs')]: {
+      maxWidth: '100vw'
+    },
   }
 }));
 
