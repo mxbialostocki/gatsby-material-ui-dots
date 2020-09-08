@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 // import Style components directly from material-ui/core here:
 import { Typography, Container } from '@material-ui/core'
 
@@ -9,6 +8,7 @@ import useStyles from "../../plugins/custom-mui-theme/theme/custom"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import Link from "../components/link"
 
 const IndexPage = () => {
   // you can deconstruct the required styles from custom.js like so, and then apply to an element using className={}
@@ -24,7 +24,6 @@ const IndexPage = () => {
           <Image />
         </Container>
         <Link to="/page-2/">Go to page 2</Link>
-        <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
       </Layout>
     </React.Fragment>
   )
