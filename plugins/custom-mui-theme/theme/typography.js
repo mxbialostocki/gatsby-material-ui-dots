@@ -87,6 +87,22 @@ const typography = {
     textRendering: 'optimizeLegibility',
     fontSize: '1.25rem',
     lineHeight: 1.6
+  },
+  body1: {
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 0,
+    marginBottom: '1.45rem',
+    paddingBottom: 0,
+    paddingLeft: 0,
+    paddingRight: 0,
+    paddingTop: 0,
+    color: 'inherit',
+    fontFamily: "'Roboto Mono', monospace, Roboto, sans-serif",
+    fontWeight: 500,
+    textRendering: 'optimizeLegibility',
+    fontSize: '1rem',
+    lineHeight: 1.6
   }
 }
 
