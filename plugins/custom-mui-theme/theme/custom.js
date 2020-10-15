@@ -15,7 +15,8 @@ const useStyles = makeStyles((theme) => ({
     top: '0',
     zIndex: '10',
     width: '100vw',
-    height: '6rem'
+    height: '4rem',
+    align: 'center'
   },
   headerWrap: {
     margin: `0 auto`,

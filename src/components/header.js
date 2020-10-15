@@ -10,7 +10,7 @@ const Header = ({ siteTitle }) => {
   const { header, headerWrap } = useStyles()
   return (
     <header className={header} >
-      <Grid container spacing={4} direction="row" justify='space-around' className={headerWrap}>
+      <Grid container spacing={4} direction="row" justify='space-around' alignItems='center' className={headerWrap}>
 
         <Grid item xs={12} sm={6}>        
           <Link to="/" >
