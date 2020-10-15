@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import { Grid } from '@material-ui/core'
 
 import Header from "./header"
@@ -9,20 +8,11 @@ import Footer from "./footer"
 import useStyles from '../../plugins/custom-mui-theme/theme/custom'
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
   const { layout } = useStyles()
 
   return (
     <React.Fragment>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header />
       <Grid container spacing={4} className={layout}>
         <Grid item xs={12}>
           <main>{children}</main>

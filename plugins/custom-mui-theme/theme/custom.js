@@ -29,6 +29,30 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: '100vw'
     }
   },
+  navItem: {
+    color: 'white',
+    textDecoration: 'none',
+    wordWrap: 'initial',
+    '&:hover': {
+      color: 'grey'
+    },
+  },
+  navDropdown: {
+    textAlign: 'center',
+    marginTop: '5px',
+    '&:hover': {
+      cursor: 'pointer'
+    },
+    '&:hover $svg $g': {
+      fill: '#f44336'
+    },
+    [theme.breakpoints.up('sm')]: {
+      marginTop: '10px'
+    },
+    [theme.breakpoints.up('md')]: {
+      display: 'none'
+    }
+  },
   link: {
     textDecoration: 'none',
     color: `#f44336`
