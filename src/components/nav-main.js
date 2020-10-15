@@ -1,8 +1,6 @@
 import React from "react"
 
-import PropTypes from "prop-types"
-
-import {graphql, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 
 import { Grid, Typography, Hidden } from "@material-ui/core"
 
@@ -64,14 +62,6 @@ const NavMain = ({ setAnchorEl, navItems }) => {
       </Hidden>
     </Grid>
   )
-}
-
-NavMain.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-NavMain.defaultProps = {
-  siteTitle: ``,
 }
 
 export default NavMain
