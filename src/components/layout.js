@@ -5,7 +5,7 @@ import { Grid } from '@material-ui/core'
 import Header from "./header"
 import Footer from "./footer"
 
-import useStyles from '../../plugins/custom-mui-theme/theme/custom'
+import { useStyles } from '../utils'
 
 const Layout = ({ children }) => {
   const { layout } = useStyles()

@@ -3,7 +3,7 @@ import React from "react"
 import { Typography, Container } from '@material-ui/core'
 
 // import useStyles from the custom-mui-theme custom.js
-import useStyles from "../../plugins/custom-mui-theme/theme/custom"
+import { useStyles } from '../utils'
 
 import Layout from "../components/layout"
 import Image from "../components/image"

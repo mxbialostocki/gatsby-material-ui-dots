@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link as GatsbyLink } from "gatsby"
 
-import useStyles from '../../plugins/custom-mui-theme/theme/custom'
+import { useStyles } from '../utils'
 
 // destructure the prop here and pass activeClassName and partiallyActive to GatsbyLink
 const Link = ({ children, to, activeClassName, activeStyle, partiallyActive, ...other }) => {

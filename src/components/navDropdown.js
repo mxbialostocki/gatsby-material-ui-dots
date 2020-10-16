@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { Menu, MenuItem, Typography } from '@material-ui/core'
-import { createSlug, useStyles } from '../utils'
+import { useStyles, createSlug } from '../utils'
 
-export const NavDropdown = ({ anchorEl, setAnchorEl, navItems }) => {
+const NavDropdown = ({ anchorEl, setAnchorEl, navItems }) => {
   const { navItem } = useStyles()
   const closeMenu = () => {
     setAnchorEl(null)
@@ -45,4 +45,4 @@ export const NavDropdown = ({ anchorEl, setAnchorEl, navItems }) => {
   )
 }
 
-// export default NavDropdown
+export default NavDropdown

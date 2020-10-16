@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 
-import { NavMain } from './nav-main'
-import { NavDropdown } from './nav-dropdown'
+import NavMain from './navMain'
+import NavDropdown from './navDropdown'
 import { useStyles } from '../utils'
 
 const Header = () => {
-  const navItems = ['home', 'page1', 'page2', 'contact']
+  const navItems = ['home', 'page-1', 'page-2', 'contact']
   const { header } = useStyles()
   const [anchorEl, setAnchorEl] = useState(null)
   return (

@@ -3,7 +3,7 @@ import { Grid, Typography } from "@material-ui/core"
 
 import Link from './link'
 
-import useStyles from "../../plugins/custom-mui-theme/theme/custom"
+import { useStyles } from '../utils'
 
 const Footer = () => {
   const { footer, footerWrap, primary } = useStyles()

@@ -40,7 +40,7 @@ const NavMain = ({ setAnchorEl, navItems }) => {
         </Typography>
       </Grid>
       <Hidden smDown>
-        <Grid container item direction="row" justify="space-evenly" alignContent="flex-end" alignItems="center" xs={2} md={8}>
+        <Grid container item direction="row" justify="space-evenly" alignContent="center" alignItems="center" xs={2} md={8}>
           {navItems.filter(item => item !== 'home').map(item => (
             <Grid
               key={item}
